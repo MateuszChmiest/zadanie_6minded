@@ -1,0 +1,14 @@
+.btn {
+    width: 100%;
+    max-width: 13.5rem;
+    height: 3.375rem;
+    border-radius: 2rem;
+    font-size: 0.84375rem;
+    font-weight: 400;
+    border: none;
+
+    &__banner {
+        background-color: $color-black;
+        color: $color-white;
+    }
+}

@@ -1,7 +1,7 @@
 .countdown {
     width: 100%;
-    height: 5rem;
-    background-color: green;
+    height: 6.25rem;
+    background-color: $color-primary;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,12 @@
         align-items: center;
     }
 
+    &__title {
+        color: $color-white;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
     &__timebox {
         display: flex;
     }
@@ -20,12 +26,12 @@
     &__time {
         display: flex;
         align-items: center;
-        padding: 1rem;
+        padding: 2.5rem;
+        color: $color-white;
 
         h2 {
+            font-size: 2rem;
             margin-right: 1rem;
-            border: 1px solid black;
-            padding: 1rem;
         }
     }
 }

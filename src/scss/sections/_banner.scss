@@ -1,28 +1,61 @@
 .banner {
 
-
-    &__image {
-        background-color: lightgray;
         width: 100%;
         height: 100vh;
+        position: relative;
         display: flex;
         justify-content: center;
         text-align: center;
-    }
 
     &__context {
-        margin-top: 3.5rem;
+        margin-top: 6.25rem;
+        padding: 1rem;
 
         &--title {
-            font-size: 4rem;
+            font-size: 2.5rem;
+            color: $color-white;
+            text-shadow: 0px 0px 3px rgba(66, 68, 90, 1);
+
             span {
-                color: green;
+                color: $color-green;
+            }
+
+            @include medium {
+                font-size: 5rem;
             }
         }
 
         &--text {
-            margin: 1.5rem 0 1.5rem 0
+            margin: 2.875rem 0 2.875rem 0;
+            font-size: 0.75rem;
+            line-height: 1.6875rem;
+            color: $color-white;
+            text-shadow: 0px 0px 2px rgba(66, 68, 90, 1);
+
+            @include medium {
+                font-size: 1.125rem;
+            }
         }
     }
 
+    &__video {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+
+        @media (min-aspect-ratio: 16/9) {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-aspect-ratio: 16/9) {
+            width: auto;
+            height: 100%;
+        }
+    }
 }

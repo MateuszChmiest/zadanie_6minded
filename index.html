@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Zadanie 6minded - Mateusz Chmiest</title>
 </head>
+
 <body>
-    <header class="header" id="navigation">
-        <div class="header__container">
-            <div class="header__logo">
+    <nav class="nav" id="navigation">
+        <div class="nav__container">
+            <div class="nav__logo">
                 <p>Built for Retail.</p>
             </div>
-            <div class="header__nav">
-                <p class="header__nav--link">Free trial</p>
-                <span class="header__nav--burger">button</span>
+            <div class="nav__menu">
+                <p class="nav__menu--link">Free trial</p>
+                <button type="button" class="nav__burger">
+                    <div class="nav__burger--line"></div>
+                    <div class="nav__burger--line"></div>
+                    <div class="nav__burger--line"></div>
+                </button>
             </div>
+            <ul class="nav__list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <section class="banner" id="hero">
-        <div class="banner__image">
-            <div class="banner__context">
-                <h1 class="banner__context--title">Inbound <br/><span>Marketing</span> Agency</h1>
-                <p class="banner__context--text">Keep track of your teams time and attendance and streamline <br/>payroll with our</p>
-                <button type="button">schedule a free demo</button>
-            </div>
+        <video autoplay loop muted class="banner__video">
+            <source src="./assets/banner-video.mp4" type="video/mp4">
+        </video>
+        <div class="banner__context">
+            <h1 class="banner__context--title">Inbound <br /><span>Marketing</span> Agency</h1>
+            <p class="banner__context--text">Keep track of your teams time and attendance and streamline<br /> payroll
+                with our integrated time clock solution.</p>
+            <button type="button" class="btn btn__banner">schedule a free demo</button>
         </div>
     </section>
 
     <div class="countdown" id="timer">
         <div class="countdown__container container">
-            <div>
+            <div class="countdown__title">
                 <span>Hurry up!</span>
             </div>
             <div class="countdown__timebox">
                 <div class="countdown__time">
                     <h2 id="days">00</h2>
-                    <p>Days</p>
+                    <p>days</p>
                 </div>
                 <div class="countdown__time">
                     <h2 id="hours">00</h2>
-                    <p>Hours</p>
+                    <p>hours</p>
                 </div>
                 <div class="countdown__time">
                     <h2 id="minutes">00</h2>
-                    <p>Minutes</p>
+                    <p>minutes</p>
                 </div>
                 <div class="countdown__time">
                     <h2 id="seconds">00</h2>
-                    <p>Seconds</p>
+                    <p>seconds</p>
                 </div>
             </div>
-            <button>schedule a free demo</button>
+            <button type="button" class="btn">schedule a free demo</button>
         </div>
     </div>
     <script src="/src/js/index.js"></script>
 </body>
+
 </html>

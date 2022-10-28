@@ -27,3 +27,11 @@ const updateCountDownTimer = () => {
 }
 
 setInterval(updateCountDownTimer, 1000)
+
+//* Burger 
+const burger = document.querySelector('.nav__burger');
+const burgerMenu = document.querySelector('.nav__list');
+
+burger.addEventListener('click' , () => {
+    burgerMenu.classList.toggle('active');
+})
