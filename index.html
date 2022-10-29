@@ -13,13 +13,15 @@
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <nav class="nav" id="navigation">
         <div class="nav__container">
             <div class="nav__logo">
                 <p>Built for Retail.</p>
             </div>
             <div class="nav__menu">
-                <p class="nav__menu--link">Free trial</p>
+                <p class="nav__menu--link">free trial</p>
                 <button type="button" class="nav__burger">
                     <div class="nav__burger--line"></div>
                     <div class="nav__burger--line"></div>
@@ -34,6 +36,7 @@
         </div>
     </nav>
 
+    <!-- Banner -->
     <section class="banner" id="hero">
         <video autoplay loop muted class="banner__video">
             <source src="./assets/banner-video.mp4" type="video/mp4">
@@ -46,6 +49,7 @@
         </div>
     </section>
 
+    <!-- Countdown timer -->
     <div class="countdown" id="timer">
         <div class="countdown__container container">
             <div class="countdown__title">
@@ -53,25 +57,89 @@
             </div>
             <div class="countdown__timebox">
                 <div class="countdown__time">
-                    <h2 id="days">00</h2>
+                    <div class="countdown__time--border">
+                        <h2 id="days">00</h2>
+                    </div>
                     <p>days</p>
                 </div>
                 <div class="countdown__time">
-                    <h2 id="hours">00</h2>
+                    <div class="countdown__time--border">
+                        <h2 id="hours">00</h2>
+                    </div>
                     <p>hours</p>
                 </div>
                 <div class="countdown__time">
-                    <h2 id="minutes">00</h2>
+                    <div class="countdown__time--border">
+                        <h2 id="minutes">00</h2>
+                    </div>
                     <p>minutes</p>
                 </div>
                 <div class="countdown__time">
-                    <h2 id="seconds">00</h2>
+                    <div class="countdown__time--border">
+                        <h2 id="seconds">00</h2>
+                    </div>
                     <p>seconds</p>
                 </div>
             </div>
-            <button type="button" class="btn">schedule a free demo</button>
+            <button type="button" class="btn btn__timer">schedule a free demo</button>
         </div>
     </div>
+
+    <section class="offer" id="about">
+        <div class="offer__container">
+            <div class="offer__section">
+                <div class="offer__section--box">
+                    <h3>Save Time with Automated Punch Corrections</h3>
+                    <p>Do your District Managers and HR staff spend hours every week chasing down punches in time to make payroll? Shiftlab automates punch corrections, giving your team hours back every week!</p>
+                </div>
+                <div class="offer__section--image">
+                    <img src="./assets/phone1.svg" alt="phone1">
+                </div>
+            </div>
+            <div class="offer__section">
+                <div class="offer__section--box">
+                    <h3>Prevent Early Clock-Ins</h3>
+                    <p>Cut back on time theft across your retail business with early clock-in prevention.</p>
+                </div>
+                <div class="offer__section--image">
+                    <img src="./assets/phone2.svg" alt="phone2">
+                </div>
+            </div>
+            <div class="offer__section">
+                <div class="offer__section--box">
+                    <h3>Eliminate Buddy Punching</h3>
+                    <p>Only allow staff scheduled to work to clock in, saving you from paying for unbudgeted labor hours. Our biometrics integration ensures the right team member is present to begin their shift.</p>
+                </div>
+                <div class="offer__section--imageFull thumb">
+                </div>
+            </div>
+            <div class="offer__section">
+                <div class="offer__section--box">
+                    <h3>Help your team take breaks, and stay labor compliant</h3>
+                    <p>Automatically track overtime and mandatory meal breaks to stay labor compliant with built-in attestation and break alerts.</p>
+                </div>
+                <div class="offer__section--imageFull people">
+                </div>
+            </div>
+            <div class="offer__section">
+                <div class="offer__section--box">
+                    <h3>Get Real-Time Feedback</h3>
+                    <p>With our smart notifications, Managers get real-time feedback on late store openings, missed breaks and overtime.</p>
+                </div>
+                <div class="offer__section--image">
+                    <img src="./assets/phone3.svg" alt="phone3">
+                </div>
+            </div>
+            <div class="offer__section">
+                <div class="offer__section--box">
+                    <h3>Integrated with our leading Scheduling Platform </h3>
+                </div>
+                <div class="offer__section--image">
+                    <img src="./assets/apps.svg" alt="apps">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="/src/js/index.js"></script>
 </body>
 

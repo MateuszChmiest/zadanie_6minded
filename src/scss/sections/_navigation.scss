@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    background-color: $color-white;
+    opacity: 0.97;
     height: 4rem;
     position: relative;
     z-index: 2;
@@ -20,7 +21,7 @@
 
         &--link {
             margin-right: 1rem;
-            color: palevioletred;
+            color: #ed3170;
         }
     }
 

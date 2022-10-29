@@ -1,7 +1,4 @@
 .btn {
-    width: 100%;
-    max-width: 13.5rem;
-    height: 3.375rem;
     border-radius: 2rem;
     font-size: 0.84375rem;
     font-weight: 400;
@@ -10,5 +7,12 @@
     &__banner {
         background-color: $color-black;
         color: $color-white;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    &__timer {
+        background-color: $color-white;
+        color: $color-black;
+        padding: 1rem 2rem 1rem 2rem;
     }
 }
