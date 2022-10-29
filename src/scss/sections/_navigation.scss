@@ -22,6 +22,12 @@
         &--link {
             margin-right: 1rem;
             color: #ed3170;
+            cursor: pointer;
+            transition: all 300ms;
+
+            &:hover {
+                transform: scale(1.12);
+            }
         }
     }
 
@@ -56,13 +62,17 @@
         opacity: 0;
         transition: .4s ease-in-out;
 
-        li {
+        &--item {
             margin: 1rem;
-            cursor: pointer;
-            transition: .1s ease-in-out;
+            a {
+                color: $color-black;
+                cursor: pointer;
+                transition: .1s ease-in-out;
+                text-decoration: none;
 
-            &:hover {
-                color: $color-primary;
+                &:hover {
+                    color: $color-primary;
+                }
             }
         }
     }

@@ -29,8 +29,44 @@ setInterval(updateCountDownTimer, 1000);
 //* Burger
 const burger = document.querySelector(".nav__burger");
 const burgerMenu = document.querySelector(".nav__list");
+const navList = document.querySelectorAll(".nav__list--item");
 
 burger.addEventListener("click", () => {
 	burgerMenu.classList.toggle("active");
 });
 
+navList.forEach((el) => {
+	el.addEventListener('click', () => {
+		burgerMenu.classList.toggle("active");
+	})
+})
+
+//* Animated sections
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("show");
+		} else {
+			entry.target.classList.remove("show");
+		}
+	});
+});
+
+const showElements = document.querySelectorAll(".offer__section--box");
+showElements.forEach((el) => observer.observe(el));
+
+//* Scroll function
+const bannerButton = document.querySelector(".btn__banner");
+const navLink = document.querySelector(".nav__menu--link");
+const timerButton = document.querySelector(".btn__timer");
+const contact = document.querySelector("#contact");
+
+bannerButton.addEventListener("click", () => {
+	contact.scrollIntoView();
+});
+navLink.addEventListener("click", () => {
+	contact.scrollIntoView();
+});
+timerButton.addEventListener("click", () => {
+	contact.scrollIntoView();
+});

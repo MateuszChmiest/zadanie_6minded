@@ -29,9 +29,9 @@
                 </button>
             </div>
             <ul class="nav__list">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li class="nav__list--item"><a href="#">Home</a></li>
+                <li class="nav__list--item"><a href="#about">About Us</a></li>
+                <li class="nav__list--item"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -72,19 +72,20 @@
                     <div class="countdown__time--border">
                         <h2 id="minutes">00</h2>
                     </div>
-                    <p>minutes</p>
+                    <p>min</p>
                 </div>
                 <div class="countdown__time">
                     <div class="countdown__time--border">
                         <h2 id="seconds">00</h2>
                     </div>
-                    <p>seconds</p>
+                    <p>sec</p>
                 </div>
             </div>
             <button type="button" class="btn btn__timer">schedule a free demo</button>
         </div>
     </div>
 
+    <!-- Offer -->
     <section class="offer" id="about">
         <div class="offer__container">
             <div class="offer__section">
@@ -93,7 +94,7 @@
                     <p>Do your District Managers and HR staff spend hours every week chasing down punches in time to make payroll? Shiftlab automates punch corrections, giving your team hours back every week!</p>
                 </div>
                 <div class="offer__section--image">
-                    <img src="./assets/phone1.svg" alt="phone1">
+                    <img src="./assets/phone1.svg" alt="phone1" style="max-width: 300px;">
                 </div>
             </div>
             <div class="offer__section">
@@ -138,6 +139,13 @@
                     <img src="./assets/apps.svg" alt="apps">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="form" id="contact">
+        <div class="container">
+
         </div>
     </section>
     <script src="/src/js/index.js"></script>

@@ -1,18 +1,27 @@
 .btn {
-    border-radius: 2rem;
-    font-size: 0.84375rem;
-    font-weight: 400;
-    border: none;
+	border-radius: 2rem;
+	font-size: 0.84375rem;
+	font-weight: 400;
+	border: none;
+	transition: all 400ms;
 
-    &__banner {
-        background-color: $color-black;
-        color: $color-white;
-        padding: 1rem 2rem 1rem 2rem;
-    }
+	&:hover {
+		-webkit-transform: scale(1.15);
+		-moz-transform: scale(1.15);
+		-ms-transform: scale(1.15);
+		-o-transform: scale(1.15);
+		transform: scale(1.15);
+	}
 
-    &__timer {
-        background-color: $color-white;
-        color: $color-black;
-        padding: 1rem 2rem 1rem 2rem;
-    }
+	&__banner {
+		background-color: $color-black;
+		color: $color-white;
+		padding: 1rem 2rem 1rem 2rem;
+	}
+
+	&__timer {
+		background-color: $color-white;
+		color: $color-black;
+		padding: 1rem 2rem 1rem 2rem;
+	}
 }

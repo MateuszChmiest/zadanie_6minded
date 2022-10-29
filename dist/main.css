@@ -418,6 +418,7 @@ html {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -468,6 +469,11 @@ html {
 .nav__menu--link {
   margin-right: 1rem;
   color: #ed3170;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.nav__menu--link:hover {
+  transform: scale(1.12);
 }
 .nav__burger {
   background-color: transparent;
@@ -498,12 +504,16 @@ html {
   opacity: 0;
   transition: 0.4s ease-in-out;
 }
-.nav__list li {
+.nav__list--item {
   margin: 1rem;
+}
+.nav__list--item a {
+  color: #000000;
   cursor: pointer;
   transition: 0.1s ease-in-out;
+  text-decoration: none;
 }
-.nav__list li:hover {
+.nav__list--item a:hover {
   color: #69D7B0;
 }
 
@@ -534,6 +544,11 @@ html {
 }
 @media (min-width: 768px) {
   .banner__context--title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 976px) {
+  .banner__context--title {
     font-size: 5rem;
   }
 }
@@ -546,13 +561,18 @@ html {
 }
 @media (min-width: 768px) {
   .banner__context--text {
-    font-size: 1.125rem;
+    font-size: 0.85rem;
     margin: 2.875rem 0 2.875rem 0;
     line-height: 1.6875rem;
   }
 }
+@media (min-width: 976px) {
+  .banner__context--text {
+    font-size: 1.125rem;
+  }
+}
 .banner__video {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   left: 0;
   top: 0;
@@ -601,6 +621,11 @@ html {
   font-size: 1.5rem;
 }
 @media (min-width: 768px) {
+  .countdown__title {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 976px) {
   .countdown__title {
     font-size: 2.5rem;
   }
@@ -700,12 +725,17 @@ html {
   align-items: center;
   flex-direction: column;
   width: 50%;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 1s;
 }
 .offer__section--box h3 {
   width: 100%;
   font-size: 1.5rem;
   font-weight: 500;
-  margin: 1.5rem 0 1.5rem 0;
+  line-height: 2rem;
+  margin: 1.75rem 0 1.75rem 0;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -714,12 +744,13 @@ html {
     font-size: 2rem;
     margin: 0 0 2.5rem 0;
     text-align: start;
+    line-height: 2.25rem;
   }
 }
 @media (min-width: 1440px) {
   .offer__section--box h3 {
     width: 60%;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     margin: 0 0 3rem 0;
   }
 }
@@ -750,7 +781,7 @@ html {
 }
 .offer__section--image img {
   width: 100%;
-  max-width: 370px;
+  max-width: 400px;
 }
 .offer__section--imageFull {
   background-repeat: no-repeat;
@@ -786,12 +817,21 @@ html {
     margin-top: 0;
   }
 }
+.offer .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 .btn {
   border-radius: 2rem;
   font-size: 0.84375rem;
   font-weight: 400;
   border: none;
+  transition: all 400ms;
+}
+.btn:hover {
+  transform: scale(1.15);
 }
 .btn__banner {
   background-color: #000000;

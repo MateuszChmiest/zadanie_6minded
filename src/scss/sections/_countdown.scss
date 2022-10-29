@@ -24,6 +24,9 @@
 		font-size: 1.5rem;
 
 		@include medium {
+			font-size: 1.9rem;
+		}
+		@include large {
 			font-size: 2.5rem;
 		}
 	}
