@@ -33,6 +33,7 @@ const navList = document.querySelectorAll(".nav__list--item");
 
 burger.addEventListener("click", () => {
 	burgerMenu.classList.toggle("active");
+	navList.forEach((e) => e.classList.toggle("active"));
 });
 
 navList.forEach((el) => {

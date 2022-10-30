@@ -56,14 +56,13 @@
         left: 0;
         background-color: $color-white;
         width: 100%;
-        height: 20vh;
-        z-index: -1;
-        transform: translateY(-200%);
-        opacity: 0;
-        transition: .4s ease-in-out;
+        height: 0;
+        transition: 300ms ease-in-out;
 
         &--item {
             margin: 1rem;
+            opacity: 0;
+            transition: 200ms ease-in-out;
             a {
                 color: $color-black;
                 cursor: pointer;
@@ -79,6 +78,6 @@
 }
 
 .active {
-    transform: translateY(0%);
+    height: 20vh;
     opacity: 1;
 }
