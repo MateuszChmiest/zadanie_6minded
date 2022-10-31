@@ -64,20 +64,10 @@
         object-fit: cover;
         opacity: 0.8;
 
-        @media (min-aspect-ratio: 16/9) {
-            width: 100%;
-            height: auto;
-        }
 
-        @media (max-aspect-ratio: 16/9) {
-            width: auto;
-            height: 100%;
-        }
 
         @media (max-width: 767px) {
             display: none;
-            background-image: url("../../../assets/banner-image.png");
-            background-size: cover;
         }
     }
 }

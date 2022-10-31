@@ -39,6 +39,7 @@ burger.addEventListener("click", () => {
 navList.forEach((el) => {
 	el.addEventListener('click', () => {
 		burgerMenu.classList.toggle("active");
+		navList.forEach((e) => e.classList.toggle("active"));
 	})
 })
 
