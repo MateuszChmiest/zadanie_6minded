@@ -48,9 +48,17 @@
     &__item {
         color: $color-white;
         font-size: 0.85rem;
-        
+
         &:nth-child(2){
-            margin: 0 2rem 0 2rem;
+            margin: 0 2rem 0 1.75rem;
+        }
+
+        @include large {
+            font-size: 1rem;
+
+            &:nth-child(2){
+                margin: 0 3rem 0 2.5rem;
+            }
         }
 
         &--title {
@@ -59,8 +67,12 @@
         }
 
         &--list {
-            line-height: 1.35rem;
+            line-height: 1.5rem;
             font-weight: 200;
+
+            @include large {
+                line-height: 1.35rem;
+            }
 
             a {
                 text-decoration: none;

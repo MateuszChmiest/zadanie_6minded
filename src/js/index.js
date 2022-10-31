@@ -1,8 +1,8 @@
 //* Countdown timer selectors
-const days = document.querySelector("#days");
-const hours = document.querySelector("#hours");
-const minutes = document.querySelector("#minutes");
-const seconds = document.querySelector("#seconds");
+const days = document.getElementById("days");
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
 
 const currentYear = new Date().getFullYear();
 
@@ -61,7 +61,7 @@ showElements.forEach((el) => observer.observe(el));
 const bannerButton = document.querySelector(".btn__banner");
 const navLink = document.querySelector(".nav__menu--link");
 const timerButton = document.querySelector(".btn__timer");
-const contact = document.querySelector("#contact");
+const contact = document.getElementById("contact");
 
 bannerButton.addEventListener("click", () => {
 	contact.scrollIntoView();
@@ -72,3 +72,33 @@ navLink.addEventListener("click", () => {
 timerButton.addEventListener("click", () => {
 	contact.scrollIntoView();
 });
+
+//* Form validation
+const email = document.getElementById('email');
+const firstName = document.getElementById('first-name');
+const lastName = document.getElementById('last-name');
+const company = document.getElementById('company');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+	let status = [];
+
+	if (!email.value || email.value === null) {
+		status.push("Enter your email");
+	}
+	if (!firstName.value || firstName.value === null) {
+		status.push("First name is required");
+	}
+	if (!lastName.value || lastName.value === null) {
+		status.push("Last name is required");
+	}
+	if (!company.value || company.value === null) {
+		status.push("Company name is required")
+	}
+
+	if (status.length > 0) {
+		e.preventDefault();
+		errorElement.innerText = status.join(', ');
+	}
+})

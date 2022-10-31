@@ -728,7 +728,7 @@ html {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-50%);
-  transition: all 1s;
+  transition: all 1.2s;
 }
 .offer__section--box h3 {
   width: 100%;
@@ -828,7 +828,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #FFFFFF;
 }
 .form__container {
@@ -838,6 +838,7 @@ html {
   width: 100%;
   min-height: 90vh;
   position: relative;
+  margin: 1rem 0 1rem 0;
   overflow: hidden;
   border: 1px solid #C5D3D3;
 }
@@ -946,6 +947,7 @@ html {
 .form__contact {
   width: 100%;
   text-align: center;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .form__contact {
@@ -981,11 +983,14 @@ html {
 .form__contact--label {
   position: absolute;
   transform: translateY(-50%);
-  left: 15px;
+  left: 25px;
   background-color: #E2EBEB;
   font-size: 0.75rem;
   border-radius: 1rem;
   padding: 1px 2px 1px 2px;
+}
+.form__error {
+  color: red;
 }
 
 .footer {
@@ -1040,15 +1045,28 @@ html {
   font-size: 0.85rem;
 }
 .footer__item:nth-child(2) {
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 0 1.75rem;
+}
+@media (min-width: 976px) {
+  .footer__item {
+    font-size: 1rem;
+  }
+  .footer__item:nth-child(2) {
+    margin: 0 3rem 0 2.5rem;
+  }
 }
 .footer__item--title {
   margin-bottom: 1.25rem;
   font-weight: 500;
 }
 .footer__item--list {
-  line-height: 1.35rem;
+  line-height: 1.5rem;
   font-weight: 200;
+}
+@media (min-width: 976px) {
+  .footer__item--list {
+    line-height: 1.35rem;
+  }
 }
 .footer__item--list a {
   text-decoration: none;

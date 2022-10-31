@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="dist/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
     <title>Zadanie 6minded - Mateusz Chmiest</title>
 </head>
 
@@ -157,16 +158,20 @@
                         and employees trust us every day
                         for their Retail Performance Platform!</p>
                 </div>
-                <form class="form__contact">
+                <form id="form" class="form__contact">
                     <div class="form__contact--input"><label for="email"
                             class="form__contact--label">e-mail</label><input id="email" name="email" type="email"
                             placeholder="Type your email" /></div>
-                    <div class="form__contact--input"><label for="first-name" class="form__contact--label">first name</label><input type="text" id="first-name" name="first-name"
+                    <div class="form__contact--input"><label for="first-name" class="form__contact--label">first
+                            name</label><input type="text" id="first-name" name="first-name"
                             placeholder="Type your first name" /></div>
-                    <div class="form__contact--input"><label for="last-name" class="form__contact--label">last name</label><input type="text" id="last-name" name="last-name"
+                    <div class="form__contact--input"><label for="last-name" class="form__contact--label">last
+                            name</label><input type="text" id="last-name" name="last-name"
                             placeholder="Type your last name" /></div>
-                    <div class="form__contact--input"><label for="company" class="form__contact--label">company name</label><input type="text" id="company" name="company"
+                    <div class="form__contact--input"><label for="company" class="form__contact--label">company
+                            name</label><input type="text" id="company" name="company"
                             placeholder="Type your company name" /></div>
+                            <p id="error" class="form__error"></p>
                     <button type="submit" class="btn btn__contact">submit</button>
                 </form>
             </div>
@@ -199,7 +204,10 @@
                 </div>
                 <div class="footer__item">
                     <p class="footer__item--title">Contact us</p>
-                    <a class="footer__item--link" href="mailto:support@contact.io">support@contact.io -></a>
+                    <div>
+                        <a class="footer__item--link" href="mailto:support@contact.io">support@contact.io</a> <img
+                            src="./assets/arrow.svg" alt="arrow" width="18px" />
+                    </div>
                 </div>
             </div>
         </div>

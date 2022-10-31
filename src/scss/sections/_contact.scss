@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: $color-white;
 
 	&__container {
@@ -13,6 +13,7 @@
 		width: 100%;
 		min-height: 90vh;
 		position: relative;
+		margin: 1rem 0 1rem 0;
 		overflow: hidden;
 		border: 1px solid #C5D3D3;
 
@@ -119,6 +120,7 @@
 	&__contact {
 		width: 100%;
 		text-align: center;
+		z-index: 10;
 
 		@include medium {
 			width: 70%;
@@ -126,7 +128,7 @@
 
 		&--input {
 			position: relative;
-			
+
 			input {
 				max-width: 860px;
 				width: 95%;
@@ -153,11 +155,15 @@
 		&--label {
 			position: absolute;
 			transform: translateY(-50%);
-			left: 15px;
+			left: 25px;
 			background-color: $color-contact;
 			font-size: 0.75rem;
 			border-radius: 1rem;
 			padding: 1px 2px 1px 2px;
 		}
+	}
+
+	&__error {
+		color: red;
 	}
 }
